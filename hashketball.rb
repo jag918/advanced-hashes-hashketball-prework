@@ -127,7 +127,6 @@ def get_all_players
   team_players_array = game_hash.values.map do |team_data|
     team_data[:players]
   end
-
   team_players_array.flatten
 end
 
@@ -138,7 +137,6 @@ def get_data_from_player(player_name, data)
     if(player_data[:player_name] == player_name)
       result = player_data[data]
     end
-
     result
   end
 end
